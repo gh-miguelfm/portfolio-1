@@ -60,7 +60,12 @@
 .fcon_icons{
 	display: grid;
 }	
-
+.soc-con{
+	padding: 7px;
+}
+.soc_icon{
+	width: 30px;
+}
 .fcon_blogTitle{
 	grid-row: 5 / span 4;
 }
