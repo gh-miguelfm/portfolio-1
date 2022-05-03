@@ -50,15 +50,12 @@
 	grid-template-columns: 1fr;
 	min-height: 50vh;
 }
-.firstPart-1{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/* padding: 10px 0 10px 0; */
-}
 .fcon_details{
-	grid-row: 3 / span 1;
-	grid-column: 1 / span 1;
+	display: grid;
+	/* grid-template-rows: 20% 80%; */
+}
+.fcon_details span{
+	margin-bottom: 10px;
 }
 .fcon_icons{
 	display: grid;
@@ -74,3 +71,4 @@
 	padding: 2% 2%;
 	background-color: #ccd3f3;
 }
+
