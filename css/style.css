@@ -185,9 +185,29 @@ a{
 	padding: 2% 0;
 }
 
+
+.fcon_details-container{
+	display: grid;
+	/* background-color: blue; */
+	grid-template-rows: 20% 80%;
+}
+.fcon_icon-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+.fcon_tech-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+	
+}
 .fcon_icons-title{
 	background-color: #4b8695;
-	padding: 5% 5%;
+	padding: 2% 0 0 5%;
+}
+
+.fcon_tech-title{
+	background-color: #6965ef;
+	padding: 2% 0 0 5%;
 }
 .fcon_icons{
 	padding: 5% 5%;
@@ -217,12 +237,8 @@ a{
 	height: auto;
 }
 
-.fcon_tech-title{
-	background-color: #6965ef;
-	padding: 5% 5%;
-}
 .fcon_tech-icons{
-	padding: 5% 5%;
+	padding: 2%;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(2, auto);
 	display: grid;
