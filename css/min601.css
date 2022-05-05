@@ -37,14 +37,16 @@
 	grid-column: 1 / span 4;
 }
 .fcon-img_con{
-	padding: 5% 5%;
+	padding: 1% 0;
 	display: flex;
 	justify-content: center;
 	grid-row: 2 / span 1;
 	grid-column: 1 / span 2;
 }
 .fPart1-img{
+	align-self: center;
 	width: 80%;
+	height: 75%;
 }
 
 .fcon_details-container{
@@ -59,9 +61,6 @@
 	padding-bottom: 0; */
 	display: flex;
 	flex-direction: column;
-}
-.fcon_details span{
-	margin-bottom: 10px;
 }
 
 .fcon_icon-container{

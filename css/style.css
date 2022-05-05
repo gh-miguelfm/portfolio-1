@@ -177,36 +177,28 @@ a{
   padding: 10% 5%;
   background-color: #8ECAE6;
 }
-.fcon_details p{
-	/* height: 100%; */
-}
 .p_details{
 	background-color: #f4bd6c;
 	padding: 2% 0;
 }
-
+.fcon_details span{
+	margin-bottom: 5px;
+}
 
 .fcon_details-container{
 	display: grid;
 	/* background-color: blue; */
 	grid-template-rows: 20% 80%;
 }
+
+
+/* soc-icon */
 .fcon_icon-container{
 	display: grid;
 	grid-template-rows: 20% 80%;
 }
-.fcon_tech-container{
-	display: grid;
-	grid-template-rows: 20% 80%;
-	
-}
 .fcon_icons-title{
 	background-color: #4b8695;
-	padding: 2% 0 0 5%;
-}
-
-.fcon_tech-title{
-	background-color: #6965ef;
 	padding: 2% 0 0 5%;
 }
 .fcon_icons{
@@ -230,13 +222,21 @@ a{
 	border-radius: 8px;
 	justify-content: center;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-
 }
-.soc_icon{
-	width: 40px;
-	height: auto;
+/* soc-icon */
+
+
+
+/* tech-icons */
+.fcon_tech-title{
+	background-color: #6965ef;
+	padding: 2% 0 0 5%;
 }
 
+.fcon_tech-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
 .fcon_tech-icons{
 	padding: 2%;
 	grid-template-columns: repeat(4, auto);
@@ -255,36 +255,49 @@ a{
 	justify-self: center;
 	padding: 5px;
 	display: flex;
-	/* border-radius: 8px; */
 	justify-content: center;
-	/* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25); */
-
 }
-.soc_icon{
-	width: 40px;
-	height: auto;
+/* tech-icons */
+
+
+
+/* blog */
+.fcon_blog-container {
+	display: grid;
+	grid-template-rows: 20% 80%;
+	align-self: center;
 }
-
-
-/* accordion */
 .fcon_blogTitle{
 	background-color: #23d3d3;
-	padding: 5% 5%;
+	padding: 2% 0 5% 5%;
 }
 .fcon_blog{
 	background-color: #6FDFDF;
 	padding: 5% 5%;
 }
+/* blog */
 
+
+
+
+/* accordion */
+.fcon_project-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+	align-self: center;
+
+}
 .fcon_projectTitle{
 	background-color: #E59B88;
-	padding: 5% 5%;
+	padding: 2% 0 5% 5%;
 	/* border-radius: 10px; */
 }
 .fcon_project{
 	background-color: #e0bcb4;
 	padding: 5% 5%;
 }
+
+
 
 .accordion {
 	width: 90%;
@@ -300,7 +313,7 @@ a{
 }
 .accordion-item-header {
 	padding: 0.5rem 3rem 0.5rem 1rem;
-	min-height: 3.5rem;
+	min-height: 2.5rem;
 	line-height: 1.25rem;
 	font-weight: bold;
 	display: flex;
