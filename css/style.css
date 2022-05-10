@@ -174,7 +174,7 @@ a{
 
   /* accordion */
 
-
+/* ALL */
 .f-con_status{
 	/* background-color: #6de8a6; */
 	padding: 5% 10%;
@@ -189,11 +189,29 @@ a{
 	/* background-color: rgb(147, 142, 221); */
 	width: 100%;
 	margin-left: 10%;
+	margin-bottom: 5%;
 }
 .soc_icon{
 	width: 30px;
 	height: auto;
 }
+
+/* ALL */
+
+/* AVATAR */
+.fcon-img_con{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	padding: 10%;
+
+}
+
+
+/* AVATAR */
+
+
+
 
 /* details */
 .fcon_details-container{
@@ -221,8 +239,8 @@ a{
 }
 .soc-con{
 	/* background-color: #649cd3; */
-	width: 90%;
-	height: 100%;
+	width: 75px;
+	height: 50px;
 	display: flex;
 	padding: 2%;
 	justify-content: center;
@@ -244,8 +262,8 @@ a{
 }
 .tech-icon{
 	/* background-color: #75818c; */
-	width: 90%;
-	height: 100%;
+	width: 75px;
+	height: 50px;
 	display: flex;
 	padding: 2%;
 	justify-content: center;

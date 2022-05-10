@@ -23,5 +23,9 @@
 }
 .header .nav ul li{
 	display: block;
-	margin:0;
+	margin-left:10px;
+}
+
+.header .nav ul li{
+    margin: 10px 0 10px 15px;
 }
