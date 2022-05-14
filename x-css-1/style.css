@@ -4,23 +4,9 @@
 :root{
     --color-1: #565a6b;
 }
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
 body{
 	font-family: 'Roboto', sans-serif;
-	/* background-color: #D0D0D0; */
-	display: flex;
-	/* justify-content: center; */
-	/* justify-items: center; */
-	flex-direction: column;
-	align-items: center;
+	background-color: #D0D0D0;
 }
 *{
 	box-sizing: border-box;
@@ -46,50 +32,40 @@ a{
 .justify-content-between{
 	justify-content: space-between;
 }
-
 /*header*/
 .header{
-	/* background-color: #ee9b60; */
-	/* padding: 12px 2%; */
+	background-color: #FFA540;
+	/* padding: 12px 10%; */
 	line-height: 1.5;
-	width: 100%;
 }
 
 .header .logo,
 .header .nav{
 	/* padding:0 15px; */
 }
-.header .logo{
-	margin-left: 5%;
-}
-.nav-toggler{
-	margin-right: 5%;
-}
 .header .logo a{
 	font-size: 30px;
 	color: #000000;
 	text-transform: capitalize;
 	font-family: 'VT323', monospace;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	font-weight:bold;
 }
 .header .nav ul li{
 	display: inline-block;
 	margin-left: 40px;
-	/* border: #111 solid 1px; */
 }
 .header .nav ul li a{
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: capitalize;
-	/* color: #ffffff; */
-	color: #000000;
-	/* padding: 10px 0; */
+	color: #ffffff;
+	padding: 10px 0;
 	transition: all 0.5s ease;
 }
 .header .nav ul li a.active,
 .header .nav ul li a:hover{
-	color: #fac677;
+	color: #f3a93d;
 }
 .nav-toggler{
 	height: 34px;
@@ -140,20 +116,156 @@ a{
 .nav-toggler.active span::after{
 	transform: rotate(135deg);
 }
-/* header */
 
 
-  /* accordion */
+
+/* content */
+/* firstPart */
+
+.firstPart{
+	margin-top: 10px;
+	background-color: #384eac;
+}
+.first-container{
+	/* display: grid; */
+}
+.f-con_status{
+	background-color:#F4CE6F;
+}
+.fpart-con-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 3px;
+}
+.fcon-img_con{
+	background-color: #376F8B;
+}
+.fPart1-img{
+}
+
+
+.firstPart-item{
+	height: 100%;
+}
+.firstPart-1{
+	background-color: #7885bb;
+}
+.fPart1-icons-container{
+	background-color: #727894;
+}
+.firstPart-2{
+	background-color: #3f4972;
+}
+.firstPart-3{
+	background-color: #b2bcec;
+	
+}  
+
+.fcon_details-title{
+	background-color: #4ca4cd;
+	padding: 5% 5%;
+}
+.fcon_details{
+  padding: 10% 5%;
+  background-color: #8ECAE6;
+}
+.p_details{
+	background-color: #f4bd6c;
+	padding: 2% 0;
+}
+.fcon_details span{
+	margin-bottom: 5px;
+}
+
+.fcon_details-container{
+	display: grid;
+	/* background-color: blue; */
+	grid-template-rows: 20% 80%;
+}
+
+
+/* all containers */
+
+.all_containers{
+	min-width: 100%;
+	max-width: 600px;
+}
+
+/* all containers */
+
+
+
+
+
+/* soc-icon */
+.fcon_icon-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+.fcon_icons-title{
+	background-color: #4b8695;
+	padding: 5% 5%;
+}
+.fcon_icons{
+	padding: 5% 5%;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(2, auto);
+	display: grid;
+	padding: 5px;
+	gap: 10px;
+	padding: 8% 3%;
+	background-color: #83afba;
+}	
+.soc-con{
+	background-color: #c5d5da;
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	justify-self: center;
+	padding: 5px;
+	display: flex;
+	border-radius: 8px;
+	justify-content: center;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+/* soc-icon */
+
+
+
+
+
+
+
+/* accordion */
+.fcon_project-container{
+	display: grid;
+	grid-template-rows: 20% 80%;
+	align-self: center;
+
+}
+.fcon_projectTitle{
+	background-color: #E59B88;
+	padding: 5% 5%;
+	/* border-radius: 10px; */
+}
+.fcon_project{
+	background-color: #e0bcb4;
+	padding: 5% 5%;
+}
+
+
+
 .accordion {
 	width: 90%;
 	max-width: 1000px;
 	margin: 2rem auto;
 }
 .accordion-item {
-	max-width: 80%;
+	background-color: #bebebe;
 	color: #111;
 	margin: .5rem .5rem;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.25);
+	/* border-radius: 0.5rem; */
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
 .accordion-item-header {
 	padding: 0.5rem 3rem 0.5rem 1rem;
@@ -187,130 +299,14 @@ a{
 	border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
+
   /* accordion */
 
-/* ALL */
-.f-con_status{
-	/* background-color: #6de8a6; */
-	padding: 5% 10% !important;
-}
-
-.all_containers{
-	padding: 2% 0;
-	/* padding: 0; */
-	border: #111 solid 1px;
-	margin-top: 5px;
-	width: 100%;
-}
-.all_title{
-	/* background-color: rgb(147, 142, 221); */
-	width: 100%;
-	margin-left: 10%;
-	margin-bottom: 5%;
-}
-.soc_icon{
-	width: 30px;
-	height: auto;
-}
-
-/* ALL */
-
-/* AVATAR */
-.fcon-img_con{
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	padding: 10%;
-
-}
-
-
-/* AVATAR */
 
 
 
 
-/* details */
-.fcon_details-container{
-	/* background-color: #898b93; */
-	padding: 5%;
-}
-.fcon_details-container span{
-	display: block;
-	margin-bottom: 5px;
-}
-
-/* details */
-
-/* social icon */
-.fcon_icon-container{
-	/* background-color: rgb(135, 133, 166); */
-}
-.fcon_icons{
-	/* background-color: rgb(191, 188, 230); */
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-template-rows: repeat(2, auto);
-	max-width: 100%;
-	/* padding: 1%;
-	gap: 1px; */
-}
-.soc-con{
-	/* background-color: #649cd3; */
-	width: 70px;
-	height: 50px;
-	display: flex;
-	padding: 2%;
-	justify-content: center;
-	justify-self: center;
-	box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.25);
-}
-
-/* social icon */
-.fcon_tech-container{
-	/* background-color: rgb(131, 131, 135); */
-}
-.fcon_tech-icons{
-	/* background-color: rgb(104, 101, 147); */
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-template-rows: repeat(2, auto);
-	max-width: 100%;
-	justify-self: center;
-	/* padding: 1%;
-	gap: 1px; */
-}
-.tech-icon{
-	/* background-color: #75818c; */
-	width: 70px;
-	height: 50px;
-	display: flex;
-	padding: 2%;
-	justify-content: center;
-	justify-self: center;
-	box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.25);
-}
-/* social icon */
 
 
-/* fcon_blog-container */
-.fcon_blog{
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	align-items: center;
-}
 
 
-/* fcon_blog-container */
-
-/* fcon_project-container */
-.fcon_project{
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	align-items: center;
-}
-
-
-/* fcon_project-container */
