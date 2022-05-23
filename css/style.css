@@ -195,7 +195,7 @@ a{
 
 /* ALL */
 .f-con_status{
-	padding: 5% 10% !important;
+	padding: 1% 5% !important;
 	background-color: #949494;
 }
 
@@ -233,9 +233,16 @@ a{
 
 .fPart1-img{
 	min-width: 100%;
-	padding: 10%;
+	height: 90%;
+	padding:10%;
+	/* padding: 10%; */
+	display: flex;
+	justify-content: center;
 }
 
+.fPart1-img img{
+	width: 100%;
+}
 /* AVATAR */
 
 
